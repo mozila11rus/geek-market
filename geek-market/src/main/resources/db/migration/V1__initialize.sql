@@ -51,31 +51,3 @@ create table order_items (
     price_per_product       int,
     quantity                int
 );
-
-insert into products (title, price)
-values
-('Bread1', 1),
-('Bread2', 2),
-('Bread3', 3),
-('Bread4', 32),
-('Bread5', 42),
-('Bread6', 52),
-('Bread7', 32),
-('Bread8', 42),
-('Bread9', 552),
-('Bread10', 32),
-('Bread11', 122),
-('Bread12', 312),
-('Bread13', 22),
-('Bread14', 432),
-('Bread15', 532),
-('Bread16', 542),
-('Bread17', 232),
-('Bread18', 22),
-('Bread19', 22),
-('Bread20', 22),
-('Bread21', 22),
-('Bread22', 22),
-('Bread23', 22),
-('Bread24', 22),
-('Bread25', 22);

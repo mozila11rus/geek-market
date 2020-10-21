@@ -7,6 +7,7 @@ angular.module('app').controller('storeController', function ($scope, $http) {
             method: 'GET',
             params: {
                 title: $scope.filter ? $scope.filter.title : null,
+                category: $scope.filter ? $scope.filter.category : null,
                 min_price: $scope.filter ? $scope.filter.min_price : null,
                 max_price: $scope.filter ? $scope.filter.max_price : null,
                 p: pageIndex

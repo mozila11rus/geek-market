@@ -4,6 +4,7 @@
         <tr>
             <td>Название</td>
             <td>Количество</td>
+            <td>Категория</td>
             <td>Цена</td>
         </tr>
         <tbody>
@@ -16,6 +17,7 @@
                 <button class="btn btn-success" ng-click="incrementItem(oi.productId)">+</button>
                 <button class="btn btn-danger" ng-click="removeItem(oi.productId)">X</button>
             </td>
+            <td>{{oi.productCategory}}</td>
             <td>{{oi.pricePerProduct + ' * ' + oi.quantity + ' = ' + oi.price}}</td>
         </tr>
         <tr>

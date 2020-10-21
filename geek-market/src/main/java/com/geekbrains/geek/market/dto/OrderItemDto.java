@@ -1,12 +1,8 @@
 package com.geekbrains.geek.market.dto;
 
-import com.geekbrains.geek.market.entities.Order;
 import com.geekbrains.geek.market.entities.OrderItem;
-import com.geekbrains.geek.market.entities.Product;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -16,6 +12,7 @@ public class OrderItemDto {
     private int quantity;
     private int pricePerProduct;
     private int price;
+    private String productCategory;
 
     public OrderItemDto(OrderItem o) {
         this.productId = o.getProduct().getId();
@@ -23,5 +20,6 @@ public class OrderItemDto {
         this.quantity = o.getQuantity();
         this.pricePerProduct = o.getPricePerProduct();
         this.price = o.getPrice();
+        this.productCategory = o.getProduct().getCategory();
     }
 }
